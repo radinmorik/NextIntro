@@ -9,16 +9,8 @@ const navigation = [
     href: "/",
   },
   {
-    label: "Svar",
-    href: "/responses",
-  },
-  {
-    label: "Oppgaver",
-    href: "/challenges",
-  },
-  {
-    label: "Spørsmål",
-    href: "/questions",
+    label: "Liste",
+    href: "/liste",
   },
 ]
 

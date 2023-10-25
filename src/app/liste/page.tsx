@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 
-
 interface ListItem {
   id: number;
   name: string;
@@ -30,7 +29,15 @@ export default function ResponsePage() {
 
   return (
     <div>
-      <p>Liste = {JSON.stringify(list)}</p>
+      {list.length > 0 ? (
+        <ul>
+          {list.map((item) => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>No data available</p>
+      )}
     </div>
   );
 }
